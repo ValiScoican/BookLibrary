@@ -1,0 +1,21 @@
+.cartButton {
+    width: 23.2rem;
+    background-color: var(--color-primary-200);
+    color: var(--color-primary-110);
+  
+    border-radius: 0.4rem;
+    padding: 1.1rem;
+    margin-top: 3.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cartIcon {
+      display: flex;
+      fill: var(--color-primary-110);
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 0.8rem;
+    }
+  }

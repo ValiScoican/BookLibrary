@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18.8rem;
+  height: calc(100vh - 14.3rem);
+  padding: 0 1rem 0 1rem;
+  
+  .imgHolder {
+    width: 37.2rem;
+    height: 52.6rem;
+  }
+
+  .details {
+    width: 65.2rem;
+    height: 52.6rem;
+
+    header {
+      .firstLine {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0.8rem;
+        h1 {
+          margin: 0;
+          font-size: 4.8rem;
+        }
+        h2 {
+          margin: 0;
+          font-size: 3.6rem;
+          color: var(--color-primary-300);
+        }
+      }
+      span {
+        font-size: 2rem;
+        strong {
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+    .description {
+      padding-bottom: 4.8rem;
+      p {
+        margin: 0;
+        padding-top: 4.8rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

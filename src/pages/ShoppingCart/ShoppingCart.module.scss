@@ -1,0 +1,50 @@
+.shoppingCart {
+  max-width: 135.6rem;
+  margin: 0 auto;
+  min-height: calc(100vh - 21.3rem);
+  font-size: 3rem;
+  padding: 7rem 1rem 0 1rem;
+
+  .userNotLogged {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-primary-500);
+    margin-top: 1.2rem;
+    grid-column: 2;
+  }
+
+  .cartEmpty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--color-primary-500);
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+  .totalCost {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.2rem;
+    padding-bottom: 4.7rem;
+    h3 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    h4 {
+      margin: 0;
+      font-size: 3rem;
+      color: var(--color-primary-300);
+      font-weight: bold;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5.1rem;
+  }
+}

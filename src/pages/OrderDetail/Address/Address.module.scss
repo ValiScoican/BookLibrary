@@ -1,0 +1,39 @@
+.billingAddress {
+  h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .inputs {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1.6rem;
+  }
+  input,
+  select {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 1.2rem 1rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid var(--color-primary-130);
+
+    &:focus,
+    &:hover {
+      border: 0.1rem solid var(--color-primary-300);
+      outline: none;
+    }
+  }
+
+  .invalid {
+    border-color: var(--color-primary-400);
+  }
+  label {
+    font-size: 1.6rem;
+    margin-left: 1.1rem;
+  }
+  .invalidLabel {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-primary-400);
+  }
+}

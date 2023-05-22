@@ -1,0 +1,68 @@
+.orderItem {
+  display: flex;
+  margin-top: 3.2rem;
+  padding: 0 1rem 3.2rem 1rem;
+  box-shadow: 0 2px 2px -2px gray;
+  .bookIcon {
+    display: flex;
+    background-color: var(--color-primary-120);
+    width: 11rem;
+    height: 12rem;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      width: 5.8rem;
+      height: 7.2rem;
+    }
+  }
+
+  .rightSide {
+    justify-content: space-between;
+    display: flex;
+    flex: 1;
+    margin-left: 3.2rem;
+
+    .orderNumber {
+      h1 {
+        font-size: 3rem;
+        margin: 0;
+      }
+      h3 {
+        font-size: 2.4rem;
+        margin: 0;
+        padding-bottom: 2.4rem;
+      }
+      h4 {
+        font-size: 2rem;
+        margin: 0;
+      }
+    }
+
+    .priceEdit {
+      p {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        font-size: 3rem;
+        color: var(--color-primary-300);
+        margin: 0;
+        margin-bottom: 0.8rem;
+        font-weight: bold;
+      }
+
+      button {
+        display: flex;
+        background-color: var(--color-primary-100);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 2rem;
+        .editIcon {
+          width: 1.6rem;
+          height: 1.6rem;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+}

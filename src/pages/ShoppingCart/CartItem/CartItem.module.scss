@@ -1,0 +1,66 @@
+.cartItem {
+  display: flex;
+  gap: 4.8rem;
+  max-width: 135.6rem;
+  height: 16.2rem;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  box-shadow: 0 2px 2px -2px gray;
+  padding: 0 1rem 0 1rem;
+
+  .imgBookCover {
+    width: 9.2;
+    height: 13rem;
+  }
+
+  .rightSide {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+
+    .titleAuthor {
+      h1 {
+        font-size: 3rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: lighter;
+        margin: 0;
+        b {
+          font-size: 2.4rem;
+        }
+      }
+      h4 {
+        font-size: 1.5rem;
+        opacity: 0.4;
+      }
+    }
+
+    .priceRemove {
+      p {
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 3rem;
+        color: var(--color-primary-300);
+        margin: 0;
+        margin-bottom: 0.8rem;
+        font-weight: bold;
+      }
+      .trashIcon {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      button {
+        background-color: var(--color-primary-100);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 2rem;
+      }
+    }
+  }
+}

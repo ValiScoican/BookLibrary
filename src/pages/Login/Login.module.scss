@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: calc(100vh - 14.3rem);
+  justify-content: center;
+  gap: 10.2rem;
+
+  .leftContainer {
+    display: flex;
+    justify-content: center;
+    @media (max-width: "1200px") {
+      display: none;
+    }
+    img {
+      width: 51.2rem;
+      height: 55rem;
+    }
+  }
+
+  .loginForm {
+    width: 51.2rem;
+    h1 {
+      font-size: 4.8rem;
+      margin: 0;
+      padding-bottom: 1.1rem;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 2rem;
+      margin: 0;
+      padding-bottom: 4.8rem;
+      font-weight: bold;
+    }
+
+    .inputs {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      .email,
+      .password {
+        padding-bottom: 3.2rem;
+        display: grid;
+        grid-template-rows: 1fr;
+        label {
+          font-size: 1.6rem;
+          padding-bottom: 1.6rem;
+          font-weight: bold;
+        }
+        input {
+          font-size: 1.6rem;
+          margin: 0;
+          padding: 1.2rem 1rem;
+          border-radius: 0.4rem;
+          border: 0.1rem solid var(--color-primary-130);
+          &:focus,
+          &:hover {
+            border: 0.1rem solid var(--color-primary-300);
+            outline: none;
+          }
+        }
+        .invalid {
+          border-color: var(--color-primary-400);
+        }
+      }
+      .invalidLabel {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: var(--color-primary-400);
+        margin-top: 1.2rem;
+      }
+      .rememberMe {
+        padding-bottom: 7.7rem;
+        label {
+          font-size: 1.4rem;
+          margin-left: 0.8rem;
+        }
+        input {
+          font-size: 1.6rem;
+          margin: 0;
+          padding: 1.2rem 1rem;
+          border-radius: 0.4rem;
+          border: 0.1rem solid var(--color-primary-130);
+        }
+      }
+      &.invalid {
+        input {
+          border-color: var(--color-primary-400);
+          color: var(--color-primary-400);
+        }
+      }
+    }
+
+    .links {
+      display: grid;
+      grid-gap: 3.2rem;
+      padding: 4.8rem 0 4.8rem 0;
+      a {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

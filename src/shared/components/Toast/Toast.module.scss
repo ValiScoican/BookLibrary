@@ -1,0 +1,64 @@
+.container {
+    font-size: 1.4rem;
+    position: fixed;
+    z-index: 10;
+  }
+  
+  .bottom-right {
+    bottom: 1rem;
+    right: 1rem;
+    animation: toast-in-right .7s;
+  }
+  
+  .notification {
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 10px #999;
+    color: #000;
+    transition: 1.3s ease;
+  }
+  
+  .notification:hover {
+    box-shadow: 0 0 12px #fff;
+    opacity: 1;
+  }
+  
+  .toast {
+    height: 50px;
+    width: 365px;
+    color: #fff;
+    padding: 20px 15px 10px 10px;
+  }
+  
+  .container button {
+    float: right;
+    background: none;
+    border: none;
+    color: #fff;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    width: 30rem;
+    height: 1.8rem;
+  }
+  
+  .description {
+    margin: 0;
+    text-align: left;
+  }
+  
+  @keyframes toast-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }

@@ -1,0 +1,67 @@
+.carouselContainer {
+  background-color: var(--color-primary-120);
+  max-width: 187.2rem;
+  min-height: 79.4rem;
+  margin: auto;
+  padding-top: 7rem;
+
+  .carouselTextImg {
+    padding-top: 11.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    flex-wrap: wrap;
+    transition: opacity ease-in-out 0.4s;
+
+    .carouselText {
+      align-items: center;
+      width: 65.2rem;
+      height: 42rem;
+
+      h1 {
+        width: 65.2rem;
+        font-size: 6.4rem;
+        margin-bottom: 2.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    .carouselImg {
+      width: 62rem;
+      height: 42rem;
+      transition: opacity ease-in-out 0.4s;
+      @media (max-width: "1500px") {
+        display: none;
+      }
+    }
+  }
+  .allLines {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding-top: 10.8rem;
+
+    .line {
+      opacity: 0.25;
+      cursor: pointer;
+      font-size: 2rem;
+      width: 1.6rem;
+      height: 0.3rem;
+      background-color: var(--color-primary-210);
+      border: 0;
+      &:hover {
+        opacity: 0.65;
+      }
+
+      &.active {
+        opacity: 1;
+        width: 2.4rem;
+        border: 0;
+        background-color: var(--color-primary-210);
+      }
+    }
+  }
+}

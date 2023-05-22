@@ -1,0 +1,27 @@
+.observationsArea {
+  margin-bottom: 4.8rem;
+  h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .inputs {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1.6rem;
+  }
+
+  textarea {
+    max-width: 84.5rem;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 1.2rem 1rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid var(--color-primary-130);
+    &:focus,
+    &:hover {
+      border: 0.1rem solid var(--color-primary-300);
+      outline: none;
+    }
+  }
+}

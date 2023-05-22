@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+
+  .header {
+    background: var(--color-primary-100);
+    border-bottom: 0.1rem solid var(--color-primary-120);
+  }
+  .content {
+    overflow: auto;
+    height: calc(100vh - 7.2rem);
+  }
+}

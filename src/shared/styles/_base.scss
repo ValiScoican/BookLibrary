@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Lora";
+  src: local("Lora"),
+    url(../utils/fonts/Lora-VariableFont_wght.ttf) format("truetype");
+}
+
+html {
+  font-size: 10px;
+  font-family: "Lora";
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}

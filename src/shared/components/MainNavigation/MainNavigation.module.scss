@@ -1,0 +1,100 @@
+.header {
+  max-width: 163.2rem;
+  height: 7.2rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: var(--color-primary-200);
+  }
+}
+
+.nav {
+  display: flex;
+
+  span {
+    cursor: pointer;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 4.8rem;
+  }
+  li {
+    margin-left: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  li,
+  a {
+    text-decoration: none;
+    position: relative;
+    color: var(--color-primary-220);
+  }
+
+  a:hover {
+    color: var(--color-primary-300);
+  }
+  li:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-primary-200);
+    height: 0.3rem;
+    width: 0;
+    bottom: -0.4rem;
+    transition: 0.3s ease-in-out;
+  }
+  li:hover:after {
+    width: 100%;
+  }
+
+  a.active {
+    color: var(--color-primary-300);
+  }
+
+  .shoppingCart {
+    &::before {
+      content: attr(title);
+      border-radius: 50%;
+      height: 1.4rem;
+      width: 1.4rem;
+      left: -1.5rem;
+      top: -0.4rem;
+      position: absolute;
+      text-align: center;
+      background: red;
+      color: white;
+      font-size: 1.1rem;
+    }
+  }
+  .noUserLogged {
+    color: var(--color-primary-140);
+  }
+}
+
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.8rem;
+}
+.logoITP {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.8rem;
+}

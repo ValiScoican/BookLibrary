@@ -1,0 +1,15 @@
+.wrapper {
+  background-color: var(--color-primary-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:4.8rem;
+  flex-wrap: wrap;
+  width: 163.2rem;
+  max-width: calc(100% - 9.6rem);
+  margin: 0 auto;  
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+
